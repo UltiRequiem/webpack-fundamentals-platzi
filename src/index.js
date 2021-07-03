@@ -1,7 +1,6 @@
-import { sum, multiply } from './utils/maths';
+import Template from './templates/Template';
 
-const GREETINGS = 'Hello World';
-
-console.log(GREETINGS);
-console.log(sum(2, 2));
-console.log(multiply([1, 2, 3, 4, 5, 6]));
+(async function App() {
+  const main = null || document.getElementById('main');
+  main.innerHTML = await Template();
+})();
