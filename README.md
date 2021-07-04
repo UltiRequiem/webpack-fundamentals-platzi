@@ -1,3 +1,3 @@
 # Webpack Fundamentals
 
-![Cover](./assets/cover.jpg)
+![Cover](./img/cover.jpg)
