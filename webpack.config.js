@@ -26,6 +26,10 @@ module.exports = {
         test: /\.css|.styl$/i,
         use: [CssPlugin.loader, 'css-loader', 'stylus-loader'],
       },
+      {
+        test: /\.png/,
+        type:'assets/resource'
+      },
     ],
   },
   plugins: [
