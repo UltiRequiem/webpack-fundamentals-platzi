@@ -2,9 +2,10 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "@templates": ["templates/"]
+      "@templates": ["templates"],
+      "@assets": ["assets"],
+      "@styles": ["styles"]
     }
   },
   "exclude": ["node_modules", "dist"]
 }
-

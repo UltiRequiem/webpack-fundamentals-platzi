@@ -3,6 +3,10 @@ import github from '../assets/images/github.png';
 import twitter from '../assets/images/twitter.png';
 import instagram from '../assets/images/instagram.png';
 
+/**
+ * Test
+ * @returns 
+ */
 const Template = async () => {
   const data = await getData();
   const view = `
