@@ -42,4 +42,5 @@ const Template = async () => {
   return view;
 };
 
-export default Template;
+// eslint-disable-next-line import/prefer-default-export
+export { Template };

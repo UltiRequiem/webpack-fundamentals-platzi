@@ -1,8 +1,8 @@
-import Template from './templates/Template';
+import {Template} from '@templates';
 import './styles/main.css';
 import './styles/vars.styl';
 
-(async function App() {
+(async () => {
   const main = null || document.getElementById('main');
   main.innerHTML = await Template();
 })();
