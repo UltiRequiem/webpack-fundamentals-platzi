@@ -22,7 +22,6 @@ module.exports = {
     },
   },
   mode: 'development',
-  watch: true,
   module: {
     rules: [
       {
@@ -75,4 +74,10 @@ module.exports = {
     }),
     new Dotenv(),
   ],
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    open: true,
+    compress: true,
+    historyApiFallback: true,
+  },
 };
