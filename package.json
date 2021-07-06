@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx webpack --mode development --config webpack.config.js",
+    "build": "npx webpack --mode production --config webpack.config.js",
+    "dev": "npx webpack --config webpack.config.dev.js",
     "start": "npx live-server ."
   },
   "keywords": [
