@@ -1,4 +1,5 @@
 import { Template } from '@templates';
+
 import '@styles/main.css';
 import '@styles/vars.styl';
 

@@ -1,4 +1,4 @@
-const API = 'https://randomuser.me/api/';
+const { API } = process.env;
 
 const getData = async () => {
   const response = await fetch(API);
