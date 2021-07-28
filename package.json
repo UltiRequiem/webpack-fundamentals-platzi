@@ -41,7 +41,7 @@
     "stylus-loader": "^6.1.0",
     "terser-webpack-plugin": "^5.1.4",
     "url-loader": "^4.1.1",
-    "webpack": "^5.45.1",
+    "webpack": "^5.47.0",
     "webpack-bundle-analyzer": "^4.4.2",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
