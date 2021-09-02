@@ -1,8 +1,8 @@
-const { API } = process.env;
+const { API } = process.env
 
 const getData = async () => {
-  const response = await fetch(API);
-  return (await response.json()).results[0];
-};
+  const response = await fetch(API)
+  return (await response.json()).results[0]
+}
 
-export default getData;
+export default getData

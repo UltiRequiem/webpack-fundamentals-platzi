@@ -1,11 +1,12 @@
-const path = require('path');
-const HtmlPlugin = require('html-webpack-plugin');
-const CssPlugin = require('mini-css-extract-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
-const Dotenv = require('dotenv-webpack');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const path = require('path')
+
+const HtmlPlugin = require('html-webpack-plugin')
+const CssPlugin = require('mini-css-extract-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
+const Dotenv = require('dotenv-webpack')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 /** @type {import('webpack').Configuration} */
 module.exports = {
@@ -13,7 +14,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[contenthash].js',
-    assetModuleFilename: 'assets/images/[hash][ext][query]',
+    assetModuleFilename: 'assets/images/[hash][ext][query]'
   },
   mode: 'production',
   resolve: {
@@ -22,8 +23,8 @@ module.exports = {
       '@utils': path.resolve(__dirname, 'src/utils/'),
       '@templates': path.resolve(__dirname, 'src/templates/'),
       '@styles': path.resolve(__dirname, 'src/styles/'),
-      '@images': path.resolve(__dirname, 'src/assets/images/'),
-    },
+      '@images': path.resolve(__dirname, 'src/assets/images/')
+    }
   },
   module: {
     rules: [
@@ -31,16 +32,16 @@ module.exports = {
         test: /\.m?js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
-        },
+          loader: 'babel-loader'
+        }
       },
       {
         test: /\.css|.styl$/i,
-        use: [CssPlugin.loader, 'css-loader', 'stylus-loader'],
+        use: [CssPlugin.loader, 'css-loader', 'stylus-loader']
       },
       {
         test: /\.png/,
-        type: 'asset/resource',
+        type: 'asset/resource'
       },
       {
         test: /\.(woff|woff2)$/,
@@ -52,35 +53,35 @@ module.exports = {
             name: '[name].[contenthash].[ext]',
             outputPath: './assets/fonts/',
             publicPath: '../assets/fonts/',
-            esModule: false,
-          },
-        },
-      },
-    ],
+            esModule: false
+          }
+        }
+      }
+    ]
   },
   plugins: [
     new HtmlPlugin({
       inject: true,
       template: './public/index.html',
-      filename: './index.html',
+      filename: './index.html'
     }),
     new CssPlugin({
-      filename: 'assets/[name].[contenthash].css',
+      filename: 'assets/[name].[contenthash].css'
     }),
     new CopyPlugin({
       patterns: [
         {
           from: path.resolve(__dirname, 'src', 'assets/images'),
-          to: 'assets/images',
-        },
-      ],
+          to: 'assets/images'
+        }
+      ]
     }),
     new Dotenv(),
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin()
   ],
 
   optimization: {
     minimize: true,
-    minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
-  },
-};
+    minimizer: [new CssMinimizerPlugin(), new TerserPlugin()]
+  }
+}
