@@ -39,7 +39,7 @@
     "prettier-plugin-jsdoc": "^0.3.23",
     "stylus": "^0.54.8",
     "stylus-loader": "^6.1.0",
-    "terser-webpack-plugin": "^5.1.4",
+    "terser-webpack-plugin": "^5.2.3",
     "url-loader": "^4.1.1",
     "webpack": "^5.48.0",
     "webpack-bundle-analyzer": "^4.4.2",
