@@ -15,7 +15,7 @@
   "author": "Eliaz Bobadilla <eliaz.bobadilladev@gmail.com> (https://github.com/UltiRequiem)",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.15.0",
+    "@babel/core": "^7.15.8",
     "@babel/plugin-transform-runtime": "^7.14.5",
     "@babel/preset-env": "^7.15.6",
     "babel-loader": "^8.2.2",
