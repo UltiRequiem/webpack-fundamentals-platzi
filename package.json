@@ -31,7 +31,7 @@
     "eslint-plugin-import": "^2.24.0",
     "eslint-plugin-prettier": "^4.0.0",
     "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^5.3.2",
+    "html-webpack-plugin": "^5.4.0",
     "live-server": "^1.1.0",
     "mini-css-extract-plugin": "^2.3.0",
     "prettier": "^2.4.1",
