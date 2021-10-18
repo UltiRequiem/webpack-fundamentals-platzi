@@ -38,7 +38,7 @@
     "prettier-eslint": "^13.0.0",
     "prettier-plugin-jsdoc": "^0.3.23",
     "stylus": "^0.55.0",
-    "stylus-loader": "^6.1.0",
+    "stylus-loader": "^6.2.0",
     "terser-webpack-plugin": "^5.2.4",
     "url-loader": "^4.1.1",
     "webpack": "^5.58.2",
