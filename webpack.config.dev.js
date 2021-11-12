@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('node:path')
 
 const HtmlPlugin = require('html-webpack-plugin')
 const CssPlugin = require('mini-css-extract-plugin')
